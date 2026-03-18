@@ -4,7 +4,7 @@ Free &amp; Open Source Technology For All
 
 # Portable Dev Suite: Coconut Core
 
-Turn any folder into a **Coconut Core**, a select collection of portable binaries and SDKs for the following languages/toolchains: [Java 26, Python 13, GCC 15, Bun 1.3, Dotnet 10] by simply running these setup scripts. Currently this is for **WINDOWS OS only** but equivalents for linux and mac will be launched soon. Once a folder is initialized, you can link any external project to these portable runtimes.
+Turn any folder into a **Coconut Core**, a select collection of portable binaries and SDKs for the following languages/toolchains: [Java 26, uv 0.10(2026), GCC 15.2, Bun 1.3, Dotnet 10] by simply running these setup scripts. Currently this is for **WINDOWS OS only** but equivalents for linux and mac will be launched soon. Once a folder is initialized, you can link any external project to these portable runtimes. You can pull other versions of python with the bundled uv but it is recommended to use Python 13 or lesser to avoid breaking changes and incompability with mainstream libraries.
 
 ---
 
@@ -21,7 +21,7 @@ Run scripts **02 through 08** in order within the folder you want to use as your
 ### 1. `98_externalTerminal.bat`
 *Opens a full CMD session in your project folder with all Core tools injected into the PATH.*
 
-* **Python:** `pip install requests` then `python main.py` to run a script with local dependencies.
+* **Python:** `uv pip install requests` then `python main.py` to run a script with local dependencies. You can use 03b_ to write desired packages in 03b_.txt and drag and drop it over the 03_.bat file to install the dependencies but it will be localized to python1 installation only. You can use uv to create other desired python environments.
 * **Java:** `javac App.java` followed by `java App` to compile and run a class.
 * **Dotnet:** `dotnet new console` to initialize a fresh C# project in your current directory.
 * **Bun/JS:** `bun install` followed by `bun index.ts` to run a TypeScript file.
