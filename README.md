@@ -4,7 +4,7 @@ Free &amp; Open Source Technology For All
 
 # Portable Dev Suite: Coconut Core
 
-Turn any folder into a **Coconut Core**, a select collection of portable binaries and SDKs for the following languages: [Java, Python, GCC, Bun, Dotnet] by simply running these setup scripts. Currently this is for **WINDOWS OS only** but equivalents for linux and mac will be launched soon. Once a folder is initialized, you can link any external project to these portable runtimes.
+Turn any folder into a **Coconut Core**, a select collection of portable binaries and SDKs for the following languages/toolchains: [Java 26, Python 13, GCC 15, Bun 1.3, Dotnet 10] by simply running these setup scripts. Currently this is for **WINDOWS OS only** but equivalents for linux and mac will be launched soon. Once a folder is initialized, you can link any external project to these portable runtimes.
 
 ---
 
@@ -53,4 +53,4 @@ Run scripts **02 through 08** in order within the folder you want to use as your
 
 ---
 
-**Note:** Ensure `npCorePath.txt` in your external folder contains the correct path to your Coconut Core directory.
+**Note:** Ensure `npCorePath.txt` in your external folder contains the correct path to your Coconut Core directory. As a PRE-REQUISITE You need to have working curl, powershell and zip utilities installed on your windows for seamless extraction.
